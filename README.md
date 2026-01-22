@@ -1,128 +1,12 @@
-# ROS2 Node Info Dump
+# ROS2 Node Interface Dump
 
-- **Node:** `/dobot_bringup_ros2`
-
-## Raw `ros2 node info`
-```
-/dobot_bringup_ros2
-  Subscribers:
-    /parameter_events: rcl_interfaces/msg/ParameterEvent
-  Publishers:
-    /dobot_bringup_ros2/msg/FeedInfo: std_msgs/msg/String
-    /dobot_msgs_v4/msg/RobotStatus: dobot_msgs_v4/msg/RobotStatus
-    /dobot_msgs_v4/msg/ToolVectorActual: dobot_msgs_v4/msg/ToolVectorActual
-    /joint_states_robot: sensor_msgs/msg/JointState
-    /parameter_events: rcl_interfaces/msg/ParameterEvent
-    /rosout: rcl_interfaces/msg/Log
-  Service Servers:
-    /dobot_bringup_ros2/describe_parameters: rcl_interfaces/srv/DescribeParameters
-    /dobot_bringup_ros2/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
-    /dobot_bringup_ros2/get_parameters: rcl_interfaces/srv/GetParameters
-    /dobot_bringup_ros2/list_parameters: rcl_interfaces/srv/ListParameters
-    /dobot_bringup_ros2/set_parameters: rcl_interfaces/srv/SetParameters
-    /dobot_bringup_ros2/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
-    /dobot_bringup_ros2/srv/AI: dobot_msgs_v4/srv/AI
-    /dobot_bringup_ros2/srv/AO: dobot_msgs_v4/srv/AO
-    /dobot_bringup_ros2/srv/AOInstant: dobot_msgs_v4/srv/AOInstant
-    /dobot_bringup_ros2/srv/AccJ: dobot_msgs_v4/srv/AccJ
-    /dobot_bringup_ros2/srv/AccL: dobot_msgs_v4/srv/AccL
-    /dobot_bringup_ros2/srv/Arc: dobot_msgs_v4/srv/Arc
-    /dobot_bringup_ros2/srv/BrakeControl: dobot_msgs_v4/srv/BrakeControl
-    /dobot_bringup_ros2/srv/CP: dobot_msgs_v4/srv/CP
-    /dobot_bringup_ros2/srv/CalcTool: dobot_msgs_v4/srv/CalcTool
-    /dobot_bringup_ros2/srv/CalcUser: dobot_msgs_v4/srv/CalcUser
-    /dobot_bringup_ros2/srv/Circle: dobot_msgs_v4/srv/Circle
-    /dobot_bringup_ros2/srv/ClearError: dobot_msgs_v4/srv/ClearError
-    /dobot_bringup_ros2/srv/DI: dobot_msgs_v4/srv/DI
-    /dobot_bringup_ros2/srv/DIGroup: dobot_msgs_v4/srv/DIGroup
-    /dobot_bringup_ros2/srv/DO: dobot_msgs_v4/srv/DO
-    /dobot_bringup_ros2/srv/DOInstant: dobot_msgs_v4/srv/DOInstant
-    /dobot_bringup_ros2/srv/DisableRobot: dobot_msgs_v4/srv/DisableRobot
-    /dobot_bringup_ros2/srv/DoGroup: dobot_msgs_v4/srv/DOGroup
-    /dobot_bringup_ros2/srv/DragSensivity: dobot_msgs_v4/srv/DragSensivity
-    /dobot_bringup_ros2/srv/EmergencyStop: dobot_msgs_v4/srv/EmergencyStop
-    /dobot_bringup_ros2/srv/EnableRobot: dobot_msgs_v4/srv/EnableRobot
-    /dobot_bringup_ros2/srv/EnableSafeSkin: dobot_msgs_v4/srv/EnableSafeSkin
-    /dobot_bringup_ros2/srv/GetAO: dobot_msgs_v4/srv/GetAO
-    /dobot_bringup_ros2/srv/GetAngle: dobot_msgs_v4/srv/GetAngle
-    /dobot_bringup_ros2/srv/GetCoils: dobot_msgs_v4/srv/GetCoils
-    /dobot_bringup_ros2/srv/GetCurrentCommandId: dobot_msgs_v4/srv/GetCurrentCommandId
-    /dobot_bringup_ros2/srv/GetDO: dobot_msgs_v4/srv/GetDO
-    /dobot_bringup_ros2/srv/GetDOGroup: dobot_msgs_v4/srv/GetDOGroup
-    /dobot_bringup_ros2/srv/GetErrorID: dobot_msgs_v4/srv/GetErrorID
-    /dobot_bringup_ros2/srv/GetHoldRegs: dobot_msgs_v4/srv/GetHoldRegs
-    /dobot_bringup_ros2/srv/GetInBits: dobot_msgs_v4/srv/GetInBits
-    /dobot_bringup_ros2/srv/GetInRegs: dobot_msgs_v4/srv/GetInRegs
-    /dobot_bringup_ros2/srv/GetInputBool: dobot_msgs_v4/srv/GetInputBool
-    /dobot_bringup_ros2/srv/GetInputFloat: dobot_msgs_v4/srv/GetInputFloat
-    /dobot_bringup_ros2/srv/GetInputInt: dobot_msgs_v4/srv/GetInputInt
-    /dobot_bringup_ros2/srv/GetOutputBool: dobot_msgs_v4/srv/GetOutputBool
-    /dobot_bringup_ros2/srv/GetOutputFloat: dobot_msgs_v4/srv/GetOutputFloat
-    /dobot_bringup_ros2/srv/GetOutputInt: dobot_msgs_v4/srv/GetOutputInt
-    /dobot_bringup_ros2/srv/GetPose: dobot_msgs_v4/srv/GetPose
-    /dobot_bringup_ros2/srv/GetStartPose: dobot_msgs_v4/srv/GetStartPose
-    /dobot_bringup_ros2/srv/InverseKin: dobot_msgs_v4/srv/InverseKin
-    /dobot_bringup_ros2/srv/ModbusClose: dobot_msgs_v4/srv/ModbusClose
-    /dobot_bringup_ros2/srv/ModbusCreate: dobot_msgs_v4/srv/ModbusCreate
-    /dobot_bringup_ros2/srv/ModbusRTUCreate: dobot_msgs_v4/srv/ModbusRTUCreate
-    /dobot_bringup_ros2/srv/MovJ: dobot_msgs_v4/srv/MovJ
-    /dobot_bringup_ros2/srv/MovJIO: dobot_msgs_v4/srv/MovJIO
-    /dobot_bringup_ros2/srv/MovL: dobot_msgs_v4/srv/MovL
-    /dobot_bringup_ros2/srv/MovLIO: dobot_msgs_v4/srv/MovLIO
-    /dobot_bringup_ros2/srv/MoveJog: dobot_msgs_v4/srv/MoveJog
-    /dobot_bringup_ros2/srv/Pause: dobot_msgs_v4/srv/Pause
-    /dobot_bringup_ros2/srv/PositiveKin: dobot_msgs_v4/srv/PositiveKin
-    /dobot_bringup_ros2/srv/PowerOn: dobot_msgs_v4/srv/PowerOn
-    /dobot_bringup_ros2/srv/RelJointMovJ: dobot_msgs_v4/srv/RelJointMovJ
-    /dobot_bringup_ros2/srv/RelMovJUser: dobot_msgs_v4/srv/RelMovJUser
-    /dobot_bringup_ros2/srv/RelMovLTool: dobot_msgs_v4/srv/RelMovLTool
-    /dobot_bringup_ros2/srv/RelMovLUser: dobot_msgs_v4/srv/RelMovLUser
-    /dobot_bringup_ros2/srv/RobotMode: dobot_msgs_v4/srv/RobotMode
-    /dobot_bringup_ros2/srv/RunScript: dobot_msgs_v4/srv/RunScript
-    /dobot_bringup_ros2/srv/ServoJ: dobot_msgs_v4/srv/ServoJ
-    /dobot_bringup_ros2/srv/ServoP: dobot_msgs_v4/srv/ServoP
-    /dobot_bringup_ros2/srv/SetBackDistance: dobot_msgs_v4/srv/SetBackDistance
-    /dobot_bringup_ros2/srv/SetCoils: dobot_msgs_v4/srv/SetCoils
-    /dobot_bringup_ros2/srv/SetCollisionLevel: dobot_msgs_v4/srv/SetCollisionLevel
-    /dobot_bringup_ros2/srv/SetHoldRegs: dobot_msgs_v4/srv/SetHoldRegs
-    /dobot_bringup_ros2/srv/SetOutputBool: dobot_msgs_v4/srv/SetOutputBool
-    /dobot_bringup_ros2/srv/SetOutputFloat: dobot_msgs_v4/srv/SetOutputFloat
-    /dobot_bringup_ros2/srv/SetOutputInt: dobot_msgs_v4/srv/SetOutputInt
-    /dobot_bringup_ros2/srv/SetPayload: dobot_msgs_v4/srv/SetPayload
-    /dobot_bringup_ros2/srv/SetPostCollisionMode: dobot_msgs_v4/srv/SetPostCollisionMode
-    /dobot_bringup_ros2/srv/SetSafeSkin: dobot_msgs_v4/srv/SetSafeSkin
-    /dobot_bringup_ros2/srv/SetSafeWallEnable: dobot_msgs_v4/srv/SetSafeWallEnable
-    /dobot_bringup_ros2/srv/SetTool: dobot_msgs_v4/srv/SetTool
-    /dobot_bringup_ros2/srv/SetTool485: dobot_msgs_v4/srv/SetTool485
-    /dobot_bringup_ros2/srv/SetToolMode: dobot_msgs_v4/srv/SetToolMode
-    /dobot_bringup_ros2/srv/SetToolPower: dobot_msgs_v4/srv/SetToolPower
-    /dobot_bringup_ros2/srv/SetUser: dobot_msgs_v4/srv/SetUser
-    /dobot_bringup_ros2/srv/SpeedFactor: dobot_msgs_v4/srv/SpeedFactor
-    /dobot_bringup_ros2/srv/StartDrag: dobot_msgs_v4/srv/StartDrag
-    /dobot_bringup_ros2/srv/StartPatht: dobot_msgs_v4/srv/StartPath
-    /dobot_bringup_ros2/srv/Stop: dobot_msgs_v4/srv/Stop
-    /dobot_bringup_ros2/srv/StopDrag: dobot_msgs_v4/srv/StopDrag
-    /dobot_bringup_ros2/srv/StopMoveJog: dobot_msgs_v4/srv/StopMoveJog
-    /dobot_bringup_ros2/srv/Tool: dobot_msgs_v4/srv/Tool
-    /dobot_bringup_ros2/srv/ToolAI: dobot_msgs_v4/srv/ToolAI
-    /dobot_bringup_ros2/srv/ToolDI: dobot_msgs_v4/srv/ToolDI
-    /dobot_bringup_ros2/srv/ToolDO: dobot_msgs_v4/srv/ToolDO
-    /dobot_bringup_ros2/srv/ToolDOInstant: dobot_msgs_v4/srv/ToolDOInstant
-    /dobot_bringup_ros2/srv/User: dobot_msgs_v4/srv/User
-    /dobot_bringup_ros2/srv/VelJ: dobot_msgs_v4/srv/VelJ
-    /dobot_bringup_ros2/srv/VelL: dobot_msgs_v4/srv/VelL
-  Service Clients:
-
-  Action Servers:
-
-  Action Clients:
-
-```
+**Node:** `/dobot_bringup_ros2`
 
 ## Publishers
 
-### /dobot_bringup_ros2/msg/FeedInfo:
+## /dobot_bringup_ros2/msg/FeedInfo
 **Type:** `std_msgs/msg/String`
+
 ```
 # This was originally provided as an example message.
 # It is deprecated as of Foxy
@@ -132,15 +16,17 @@
 string data
 ```
 
-### /dobot_msgs_v4/msg/RobotStatus:
+## /dobot_msgs_v4/msg/RobotStatus
 **Type:** `dobot_msgs_v4/msg/RobotStatus`
+
 ```
 bool is_enable
 bool is_connected
 ```
 
-### /dobot_msgs_v4/msg/ToolVectorActual:
+## /dobot_msgs_v4/msg/ToolVectorActual
 **Type:** `dobot_msgs_v4/msg/ToolVectorActual`
+
 ```
 float64 x
 float64 y
@@ -150,8 +36,9 @@ float64 ry
 float64 rz
 ```
 
-### /joint_states_robot:
+## /joint_states_robot
 **Type:** `sensor_msgs/msg/JointState`
+
 ```
 # This is a message that holds data to describe the state of a set of torque controlled joints.
 #
@@ -184,8 +71,9 @@ float64[] velocity
 float64[] effort
 ```
 
-### /parameter_events:
+## /parameter_events
 **Type:** `rcl_interfaces/msg/ParameterEvent`
+
 ```
 # This message contains a parameter event.
 # Because the parameter event was an atomic update, a specific parameter name
@@ -245,8 +133,9 @@ Parameter[] deleted_parameters
 		string[] string_array_value
 ```
 
-### /rosout:
+## /rosout
 **Type:** `rcl_interfaces/msg/Log`
+
 ```
 ##
 ## Severity level constants
@@ -306,8 +195,15 @@ string function
 uint32 line
 ```
 
-### /dobot_bringup_ros2/describe_parameters:
+## Service Servers
+**Type:** ``
+
+```
+```
+
+## /dobot_bringup_ros2/describe_parameters
 **Type:** `rcl_interfaces/srv/DescribeParameters`
+
 ```
 # A list of parameters of which to get the descriptor.
 string[] names
@@ -342,8 +238,9 @@ ParameterDescriptor[] descriptors
 		uint64 step
 ```
 
-### /dobot_bringup_ros2/get_parameter_types:
+## /dobot_bringup_ros2/get_parameter_types
 **Type:** `rcl_interfaces/srv/GetParameterTypes`
+
 ```
 # A list of parameter names.
 # TODO(wjwwood): link to parameter naming rules.
@@ -357,8 +254,9 @@ string[] names
 uint8[] types
 ```
 
-### /dobot_bringup_ros2/get_parameters:
+## /dobot_bringup_ros2/get_parameters
 **Type:** `rcl_interfaces/srv/GetParameters`
+
 ```
 # TODO(wjwwood): Decide on the rules for grouping, nodes, and parameter "names"
 # in general, then link to that.
@@ -387,8 +285,9 @@ ParameterValue[] values
 	string[] string_array_value
 ```
 
-### /dobot_bringup_ros2/list_parameters:
+## /dobot_bringup_ros2/list_parameters
 **Type:** `rcl_interfaces/srv/ListParameters`
+
 ```
 # Recursively get parameters with unlimited depth.
 uint64 DEPTH_RECURSIVE=0
@@ -408,8 +307,9 @@ ListParametersResult result
 	string[] prefixes
 ```
 
-### /dobot_bringup_ros2/set_parameters:
+## /dobot_bringup_ros2/set_parameters
 **Type:** `rcl_interfaces/srv/SetParameters`
+
 ```
 # A list of parameters to set.
 Parameter[] parameters
@@ -433,8 +333,9 @@ SetParametersResult[] results
 	string reason
 ```
 
-### /dobot_bringup_ros2/set_parameters_atomically:
+## /dobot_bringup_ros2/set_parameters_atomically
 **Type:** `rcl_interfaces/srv/SetParametersAtomically`
+
 ```
 # A list of parameters to set atomically.
 #
@@ -460,16 +361,18 @@ SetParametersResult result
 	string reason
 ```
 
-### /dobot_bringup_ros2/srv/AI:
+## /dobot_bringup_ros2/srv/AI
 **Type:** `dobot_msgs_v4/srv/AI`
+
 ```
 int32 index
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/AO:
+## /dobot_bringup_ros2/srv/AO
 **Type:** `dobot_msgs_v4/srv/AO`
+
 ```
 # index --> 1 - 2
 # value --> 0 - 10
@@ -479,8 +382,9 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/AOInstant:
+## /dobot_bringup_ros2/srv/AOInstant
 **Type:** `dobot_msgs_v4/srv/AOInstant`
+
 ```
 # index --> 1 - 2
 # value --> 0 - 10
@@ -490,8 +394,9 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/AccJ:
+## /dobot_bringup_ros2/srv/AccJ
 **Type:** `dobot_msgs_v4/srv/AccJ`
+
 ```
 # r --> 1 - 100
 int32 r
@@ -499,8 +404,9 @@ int32 r
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/AccL:
+## /dobot_bringup_ros2/srv/AccL
 **Type:** `dobot_msgs_v4/srv/AccL`
+
 ```
 # r --> 1 - 100
 int32 r
@@ -508,8 +414,9 @@ int32 r
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/Arc:
+## /dobot_bringup_ros2/srv/Arc
 **Type:** `dobot_msgs_v4/srv/Arc`
+
 ```
 bool mode
 float64 a
@@ -530,8 +437,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/BrakeControl:
+## /dobot_bringup_ros2/srv/BrakeControl
 **Type:** `dobot_msgs_v4/srv/BrakeControl`
+
 ```
 int32 axis_id
 int32 value
@@ -539,8 +447,9 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/CP:
+## /dobot_bringup_ros2/srv/CP
 **Type:** `dobot_msgs_v4/srv/CP`
+
 ```
 # r --> 1 - 100
 int32 r
@@ -548,8 +457,9 @@ int32 r
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/CalcTool:
+## /dobot_bringup_ros2/srv/CalcTool
 **Type:** `dobot_msgs_v4/srv/CalcTool`
+
 ```
 int32  index
 int32  matrix
@@ -558,8 +468,9 @@ string offset
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/CalcUser:
+## /dobot_bringup_ros2/srv/CalcUser
 **Type:** `dobot_msgs_v4/srv/CalcUser`
+
 ```
 int32  index
 int32  matrix
@@ -568,8 +479,9 @@ string offset
 int32  res
 ```
 
-### /dobot_bringup_ros2/srv/Circle:
+## /dobot_bringup_ros2/srv/Circle
 **Type:** `dobot_msgs_v4/srv/Circle`
+
 ```
 bool mode
 float64 a
@@ -590,15 +502,17 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ClearError:
+## /dobot_bringup_ros2/srv/ClearError
 **Type:** `dobot_msgs_v4/srv/ClearError`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DI:
+## /dobot_bringup_ros2/srv/DI
 **Type:** `dobot_msgs_v4/srv/DI`
+
 ```
 int32 index
 ---
@@ -606,8 +520,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DIGroup:
+## /dobot_bringup_ros2/srv/DIGroup
 **Type:** `dobot_msgs_v4/srv/DIGroup`
+
 ```
 int32[] args
 ---
@@ -615,8 +530,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DO:
+## /dobot_bringup_ros2/srv/DO
 **Type:** `dobot_msgs_v4/srv/DO`
+
 ```
 int32 index
 int32 status
@@ -625,8 +541,9 @@ int32 time
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DOInstant:
+## /dobot_bringup_ros2/srv/DOInstant
 **Type:** `dobot_msgs_v4/srv/DOInstant`
+
 ```
 int32 index
 int32 status
@@ -634,24 +551,27 @@ int32 status
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DisableRobot:
+## /dobot_bringup_ros2/srv/DisableRobot
 **Type:** `dobot_msgs_v4/srv/DisableRobot`
+
 ```
 ---
 string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DoGroup:
+## /dobot_bringup_ros2/srv/DoGroup
 **Type:** `dobot_msgs_v4/srv/DOGroup`
+
 ```
 int32[] args
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/DragSensivity:
+## /dobot_bringup_ros2/srv/DragSensivity
 **Type:** `dobot_msgs_v4/srv/DragSensivity`
+
 ```
 int32 index
 int32 value
@@ -659,31 +579,35 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/EmergencyStop:
+## /dobot_bringup_ros2/srv/EmergencyStop
 **Type:** `dobot_msgs_v4/srv/EmergencyStop`
+
 ```
 int32 value
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/EnableRobot:
+## /dobot_bringup_ros2/srv/EnableRobot
 **Type:** `dobot_msgs_v4/srv/EnableRobot`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/EnableSafeSkin:
+## /dobot_bringup_ros2/srv/EnableSafeSkin
 **Type:** `dobot_msgs_v4/srv/EnableSafeSkin`
+
 ```
 int32 status
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetAO:
+## /dobot_bringup_ros2/srv/GetAO
 **Type:** `dobot_msgs_v4/srv/GetAO`
+
 ```
 int32 index
 ---
@@ -691,16 +615,18 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetAngle:
+## /dobot_bringup_ros2/srv/GetAngle
 **Type:** `dobot_msgs_v4/srv/GetAngle`
+
 ```
 ---
 string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetCoils:
+## /dobot_bringup_ros2/srv/GetCoils
 **Type:** `dobot_msgs_v4/srv/GetCoils`
+
 ```
 int32 index
 int32 addr
@@ -710,16 +636,18 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetCurrentCommandId:
+## /dobot_bringup_ros2/srv/GetCurrentCommandId
 **Type:** `dobot_msgs_v4/srv/GetCurrentCommandId`
+
 ```
 ---
 string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetDO:
+## /dobot_bringup_ros2/srv/GetDO
 **Type:** `dobot_msgs_v4/srv/GetDO`
+
 ```
 int32 index
 ---
@@ -727,8 +655,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetDOGroup:
+## /dobot_bringup_ros2/srv/GetDOGroup
 **Type:** `dobot_msgs_v4/srv/GetDOGroup`
+
 ```
 int32[] index_group
 ---
@@ -736,16 +665,18 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetErrorID:
+## /dobot_bringup_ros2/srv/GetErrorID
 **Type:** `dobot_msgs_v4/srv/GetErrorID`
+
 ```
 ---
 string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetHoldRegs:
+## /dobot_bringup_ros2/srv/GetHoldRegs
 **Type:** `dobot_msgs_v4/srv/GetHoldRegs`
+
 ```
 int32  index
 int32  addr
@@ -756,8 +687,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetInBits:
+## /dobot_bringup_ros2/srv/GetInBits
 **Type:** `dobot_msgs_v4/srv/GetInBits`
+
 ```
 int32 index
 int32 addr
@@ -767,8 +699,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetInRegs:
+## /dobot_bringup_ros2/srv/GetInRegs
 **Type:** `dobot_msgs_v4/srv/GetInRegs`
+
 ```
 int32   index
 int32   addr
@@ -779,8 +712,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetInputBool:
+## /dobot_bringup_ros2/srv/GetInputBool
 **Type:** `dobot_msgs_v4/srv/GetInputBool`
+
 ```
 int32 address
 ---
@@ -788,8 +722,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetInputFloat:
+## /dobot_bringup_ros2/srv/GetInputFloat
 **Type:** `dobot_msgs_v4/srv/GetInputFloat`
+
 ```
 int32 address
 ---
@@ -797,8 +732,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetInputInt:
+## /dobot_bringup_ros2/srv/GetInputInt
 **Type:** `dobot_msgs_v4/srv/GetInputInt`
+
 ```
 int32 address
 ---
@@ -806,8 +742,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetOutputBool:
+## /dobot_bringup_ros2/srv/GetOutputBool
 **Type:** `dobot_msgs_v4/srv/GetOutputBool`
+
 ```
 int32 address
 ---
@@ -815,8 +752,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetOutputFloat:
+## /dobot_bringup_ros2/srv/GetOutputFloat
 **Type:** `dobot_msgs_v4/srv/GetOutputFloat`
+
 ```
 int32 address
 ---
@@ -824,8 +762,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetOutputInt:
+## /dobot_bringup_ros2/srv/GetOutputInt
 **Type:** `dobot_msgs_v4/srv/GetOutputInt`
+
 ```
 int32 address
 ---
@@ -833,8 +772,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetPose:
+## /dobot_bringup_ros2/srv/GetPose
 **Type:** `dobot_msgs_v4/srv/GetPose`
+
 ```
 int32 user
 int32 tool
@@ -843,8 +783,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/GetStartPose:
+## /dobot_bringup_ros2/srv/GetStartPose
 **Type:** `dobot_msgs_v4/srv/GetStartPose`
+
 ```
 string trace_name
 ---
@@ -852,8 +793,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/InverseKin:
+## /dobot_bringup_ros2/srv/InverseKin
 **Type:** `dobot_msgs_v4/srv/InverseKin`
+
 ```
 float64 x
 float64 y
@@ -870,16 +812,18 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ModbusClose:
+## /dobot_bringup_ros2/srv/ModbusClose
 **Type:** `dobot_msgs_v4/srv/ModbusClose`
+
 ```
 int32 index
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ModbusCreate:
+## /dobot_bringup_ros2/srv/ModbusCreate
 **Type:** `dobot_msgs_v4/srv/ModbusCreate`
+
 ```
 string   ip
 int32    port
@@ -890,8 +834,9 @@ string robot_return
 int32    res
 ```
 
-### /dobot_bringup_ros2/srv/ModbusRTUCreate:
+## /dobot_bringup_ros2/srv/ModbusRTUCreate
 **Type:** `dobot_msgs_v4/srv/ModbusRTUCreate`
+
 ```
 int32   slave_id
 int32   baud
@@ -903,8 +848,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/MovJ:
+## /dobot_bringup_ros2/srv/MovJ
 **Type:** `dobot_msgs_v4/srv/MovJ`
+
 ```
 bool mode
 float64 a
@@ -919,8 +865,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/MovJIO:
+## /dobot_bringup_ros2/srv/MovJIO
 **Type:** `dobot_msgs_v4/srv/MovJIO`
+
 ```
 bool mode
 float64 a
@@ -935,8 +882,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/MovL:
+## /dobot_bringup_ros2/srv/MovL
 **Type:** `dobot_msgs_v4/srv/MovL`
+
 ```
 bool mode
 float64 a
@@ -951,8 +899,9 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/MovLIO:
+## /dobot_bringup_ros2/srv/MovLIO
 **Type:** `dobot_msgs_v4/srv/MovLIO`
+
 ```
 bool mode
 float64 a
@@ -967,8 +916,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/MoveJog:
+## /dobot_bringup_ros2/srv/MoveJog
 **Type:** `dobot_msgs_v4/srv/MoveJog`
+
 ```
 string axis_id
 string[] param_value
@@ -976,16 +926,18 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/Pause:
+## /dobot_bringup_ros2/srv/Pause
 **Type:** `dobot_msgs_v4/srv/Pause`
+
 ```
 
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/PositiveKin:
+## /dobot_bringup_ros2/srv/PositiveKin
 **Type:** `dobot_msgs_v4/srv/PositiveKin`
+
 ```
 float64  j1
 float64  j2
@@ -1000,15 +952,17 @@ string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/PowerOn:
+## /dobot_bringup_ros2/srv/PowerOn
 **Type:** `dobot_msgs_v4/srv/PowerOn`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/RelJointMovJ:
+## /dobot_bringup_ros2/srv/RelJointMovJ
 **Type:** `dobot_msgs_v4/srv/RelJointMovJ`
+
 ```
 float64 a
 float64 b
@@ -1022,8 +976,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/RelMovJUser:
+## /dobot_bringup_ros2/srv/RelMovJUser
 **Type:** `dobot_msgs_v4/srv/RelMovJUser`
+
 ```
 float64 a
 float64 b
@@ -1037,8 +992,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/RelMovLTool:
+## /dobot_bringup_ros2/srv/RelMovLTool
 **Type:** `dobot_msgs_v4/srv/RelMovLTool`
+
 ```
 float64 a
 float64 b
@@ -1052,8 +1008,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/RelMovLUser:
+## /dobot_bringup_ros2/srv/RelMovLUser
 **Type:** `dobot_msgs_v4/srv/RelMovLUser`
+
 ```
 float64 a
 float64 b
@@ -1067,24 +1024,27 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/RobotMode:
+## /dobot_bringup_ros2/srv/RobotMode
 **Type:** `dobot_msgs_v4/srv/RobotMode`
+
 ```
 ---
 string robot_return
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/RunScript:
+## /dobot_bringup_ros2/srv/RunScript
 **Type:** `dobot_msgs_v4/srv/RunScript`
+
 ```
 string project_name
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ServoJ:
+## /dobot_bringup_ros2/srv/ServoJ
 **Type:** `dobot_msgs_v4/srv/ServoJ`
+
 ```
 float64 a
 float64 b
@@ -1098,8 +1058,9 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ServoP:
+## /dobot_bringup_ros2/srv/ServoP
 **Type:** `dobot_msgs_v4/srv/ServoP`
+
 ```
 float64 a
 float64 b
@@ -1113,16 +1074,18 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetBackDistance:
+## /dobot_bringup_ros2/srv/SetBackDistance
 **Type:** `dobot_msgs_v4/srv/SetBackDistance`
+
 ```
 float64 distance
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetCoils:
+## /dobot_bringup_ros2/srv/SetCoils
 **Type:** `dobot_msgs_v4/srv/SetCoils`
+
 ```
 int32    index
 int32    addr
@@ -1132,16 +1095,18 @@ string   val_tab
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetCollisionLevel:
+## /dobot_bringup_ros2/srv/SetCollisionLevel
 **Type:** `dobot_msgs_v4/srv/SetCollisionLevel`
+
 ```
 int32 level
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetHoldRegs:
+## /dobot_bringup_ros2/srv/SetHoldRegs
 **Type:** `dobot_msgs_v4/srv/SetHoldRegs`
+
 ```
 int32    index
 int32    addr
@@ -1152,8 +1117,9 @@ string   val_type
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetOutputBool:
+## /dobot_bringup_ros2/srv/SetOutputBool
 **Type:** `dobot_msgs_v4/srv/SetOutputBool`
+
 ```
 int32 address
 int32 value
@@ -1161,8 +1127,9 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetOutputFloat:
+## /dobot_bringup_ros2/srv/SetOutputFloat
 **Type:** `dobot_msgs_v4/srv/SetOutputFloat`
+
 ```
 int32 address
 float64 value
@@ -1170,8 +1137,9 @@ float64 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetOutputInt:
+## /dobot_bringup_ros2/srv/SetOutputInt
 **Type:** `dobot_msgs_v4/srv/SetOutputInt`
+
 ```
 int32 address
 int32 value
@@ -1179,8 +1147,9 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetPayload:
+## /dobot_bringup_ros2/srv/SetPayload
 **Type:** `dobot_msgs_v4/srv/SetPayload`
+
 ```
 float64 load
 float64 x
@@ -1190,16 +1159,18 @@ float64 z
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetPostCollisionMode:
+## /dobot_bringup_ros2/srv/SetPostCollisionMode
 **Type:** `dobot_msgs_v4/srv/SetPostCollisionMode`
+
 ```
 int32 mode
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetSafeSkin:
+## /dobot_bringup_ros2/srv/SetSafeSkin
 **Type:** `dobot_msgs_v4/srv/SetSafeSkin`
+
 ```
 int32 part
 int32 status
@@ -1207,8 +1178,9 @@ int32 status
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetSafeWallEnable:
+## /dobot_bringup_ros2/srv/SetSafeWallEnable
 **Type:** `dobot_msgs_v4/srv/SetSafeWallEnable`
+
 ```
 int32 index
 int32 value
@@ -1216,8 +1188,9 @@ int32 value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetTool:
+## /dobot_bringup_ros2/srv/SetTool
 **Type:** `dobot_msgs_v4/srv/SetTool`
+
 ```
 int32 index
 string value
@@ -1225,8 +1198,9 @@ string value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetTool485:
+## /dobot_bringup_ros2/srv/SetTool485
 **Type:** `dobot_msgs_v4/srv/SetTool485`
+
 ```
 int32  baudrate
 string parity
@@ -1236,8 +1210,9 @@ int32  identify
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetToolMode:
+## /dobot_bringup_ros2/srv/SetToolMode
 **Type:** `dobot_msgs_v4/srv/SetToolMode`
+
 ```
 int32 mode
 int32 type
@@ -1245,16 +1220,18 @@ int32 type
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetToolPower:
+## /dobot_bringup_ros2/srv/SetToolPower
 **Type:** `dobot_msgs_v4/srv/SetToolPower`
+
 ```
 int32 status
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SetUser:
+## /dobot_bringup_ros2/srv/SetUser
 **Type:** `dobot_msgs_v4/srv/SetUser`
+
 ```
 int32 index
 string value
@@ -1262,23 +1239,26 @@ string value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/SpeedFactor:
+## /dobot_bringup_ros2/srv/SpeedFactor
 **Type:** `dobot_msgs_v4/srv/SpeedFactor`
+
 ```
 int32 ratio
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/StartDrag:
+## /dobot_bringup_ros2/srv/StartDrag
 **Type:** `dobot_msgs_v4/srv/StartDrag`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/StartPatht:
+## /dobot_bringup_ros2/srv/StartPatht
 **Type:** `dobot_msgs_v4/srv/StartPath`
+
 ```
 string trace_name
 string[] param_value
@@ -1286,53 +1266,60 @@ string[] param_value
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/Stop:
+## /dobot_bringup_ros2/srv/Stop
 **Type:** `dobot_msgs_v4/srv/Stop`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/StopDrag:
+## /dobot_bringup_ros2/srv/StopDrag
 **Type:** `dobot_msgs_v4/srv/StopDrag`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/StopMoveJog:
+## /dobot_bringup_ros2/srv/StopMoveJog
 **Type:** `dobot_msgs_v4/srv/StopMoveJog`
+
 ```
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/Tool:
+## /dobot_bringup_ros2/srv/Tool
 **Type:** `dobot_msgs_v4/srv/Tool`
+
 ```
 int32 index
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ToolAI:
+## /dobot_bringup_ros2/srv/ToolAI
 **Type:** `dobot_msgs_v4/srv/ToolAI`
+
 ```
 int32 index
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ToolDI:
+## /dobot_bringup_ros2/srv/ToolDI
 **Type:** `dobot_msgs_v4/srv/ToolDI`
+
 ```
 int32 index
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ToolDO:
+## /dobot_bringup_ros2/srv/ToolDO
 **Type:** `dobot_msgs_v4/srv/ToolDO`
+
 ```
 int32 index
 int32 status
@@ -1340,8 +1327,9 @@ int32 status
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/ToolDOInstant:
+## /dobot_bringup_ros2/srv/ToolDOInstant
 **Type:** `dobot_msgs_v4/srv/ToolDOInstant`
+
 ```
 int32 index
 int32 status
@@ -1349,34 +1337,56 @@ int32 status
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/User:
+## /dobot_bringup_ros2/srv/User
 **Type:** `dobot_msgs_v4/srv/User`
+
 ```
 int32 index
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/VelJ:
+## /dobot_bringup_ros2/srv/VelJ
 **Type:** `dobot_msgs_v4/srv/VelJ`
+
 ```
 int32 r
 ---
 int32 res
 ```
 
-### /dobot_bringup_ros2/srv/VelL:
+## /dobot_bringup_ros2/srv/VelL
 **Type:** `dobot_msgs_v4/srv/VelL`
+
 ```
 int32 r
 ---
 int32 res
+```
+
+## Service Clients
+**Type:** ``
+
+```
+```
+
+## Action Servers
+**Type:** ``
+
+```
+```
+
+## Action Clients
+**Type:** ``
+
+```
 ```
 
 ## Subscribers
 
-### /parameter_events:
+## /parameter_events
 **Type:** `rcl_interfaces/msg/ParameterEvent`
+
 ```
 # This message contains a parameter event.
 # Because the parameter event was an atomic update, a specific parameter name
@@ -1438,290 +1448,1166 @@ Parameter[] deleted_parameters
 
 ## Service Servers
 
-### /dobot_bringup_ros2/describe_parameters: rcl_interfaces/srv/DescribeParameters
-**Type:** _(implicit / parameter service)_
+## /dobot_bringup_ros2/describe_parameters
+**Type:** `rcl_interfaces/srv/DescribeParameters`
+
+```
+# A list of parameters of which to get the descriptor.
+string[] names
+
+---
+# A list of the descriptors of all parameters requested in the same order
+# as they were requested. This list has the same length as the list of
+# parameters requested.
+ParameterDescriptor[] descriptors
+	string name
+	uint8 type
+	string description
+	#
+	string additional_constraints
+	bool read_only false
+	bool dynamic_typing false
+	#
+	FloatingPointRange[<=1] floating_point_range
+		float64 from_value
+		float64 to_value
+		#
+		#
+		#
+		#
+		float64 step
+	IntegerRange[<=1] integer_range
+		int64 from_value
+		int64 to_value
+		#
+		#
+		#
+		uint64 step
+```
+
+## /dobot_bringup_ros2/get_parameter_types
+**Type:** `rcl_interfaces/srv/GetParameterTypes`
+
+```
+# A list of parameter names.
+# TODO(wjwwood): link to parameter naming rules.
+string[] names
+
+---
+# List of types which is the same length and order as the provided names.
+#
+# The type enum is defined in ParameterType.msg. ParameterType.PARAMETER_NOT_SET
+# indicates that the parameter is not currently set.
+uint8[] types
+```
+
+## /dobot_bringup_ros2/get_parameters
+**Type:** `rcl_interfaces/srv/GetParameters`
+
+```
+# TODO(wjwwood): Decide on the rules for grouping, nodes, and parameter "names"
+# in general, then link to that.
+#
+# For more information about parameters and naming rules, see:
+# https://design.ros2.org/articles/ros_parameters.html
+# https://github.com/ros2/design/pull/241
+
+# A list of parameter names to get.
+string[] names
+
+---
+# List of values which is the same length and order as the provided names. If a
+# parameter was not yet set, the value will have PARAMETER_NOT_SET as the
+# type.
+ParameterValue[] values
+	uint8 type
+	bool bool_value
+	int64 integer_value
+	float64 double_value
+	string string_value
+	byte[] byte_array_value
+	bool[] bool_array_value
+	int64[] integer_array_value
+	float64[] double_array_value
+	string[] string_array_value
+```
+
+## /dobot_bringup_ros2/list_parameters
+**Type:** `rcl_interfaces/srv/ListParameters`
+
+```
+# Recursively get parameters with unlimited depth.
+uint64 DEPTH_RECURSIVE=0
+
+# The list of parameter prefixes to query.
+string[] prefixes
+
+# Relative depth from given prefixes to return.
+#
+# Use DEPTH_RECURSIVE to get the recursive parameters and prefixes for each prefix.
+uint64 depth
+
+---
+# The list of parameter names and their prefixes.
+ListParametersResult result
+	string[] names
+	string[] prefixes
+```
+
+## /dobot_bringup_ros2/set_parameters
+**Type:** `rcl_interfaces/srv/SetParameters`
+
+```
+# A list of parameters to set.
+Parameter[] parameters
+	string name
+	ParameterValue value
+		uint8 type
+		bool bool_value
+		int64 integer_value
+		float64 double_value
+		string string_value
+		byte[] byte_array_value
+		bool[] bool_array_value
+		int64[] integer_array_value
+		float64[] double_array_value
+		string[] string_array_value
+
+---
+# Indicates whether setting each parameter succeeded or not and why.
+SetParametersResult[] results
+	bool successful
+	string reason
+```
+
+## /dobot_bringup_ros2/set_parameters_atomically
+**Type:** `rcl_interfaces/srv/SetParametersAtomically`
+
+```
+# A list of parameters to set atomically.
+#
+# This call will either set all values, or none of the values.
+Parameter[] parameters
+	string name
+	ParameterValue value
+		uint8 type
+		bool bool_value
+		int64 integer_value
+		float64 double_value
+		string string_value
+		byte[] byte_array_value
+		bool[] bool_array_value
+		int64[] integer_array_value
+		float64[] double_array_value
+		string[] string_array_value
+
+---
+# Indicates whether setting all of the parameters succeeded or not and why.
+SetParametersResult result
+	bool successful
+	string reason
+```
+
+## /dobot_bringup_ros2/srv/AI
+**Type:** `dobot_msgs_v4/srv/AI`
+
+```
+int32 index
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/AO
+**Type:** `dobot_msgs_v4/srv/AO`
+
+```
+# index --> 1 - 2
+# value --> 0 - 10
+int32 index
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/AOInstant
+**Type:** `dobot_msgs_v4/srv/AOInstant`
+
+```
+# index --> 1 - 2
+# value --> 0 - 10
+int32 index
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/AccJ
+**Type:** `dobot_msgs_v4/srv/AccJ`
+
+```
+# r --> 1 - 100
+int32 r
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/AccL
+**Type:** `dobot_msgs_v4/srv/AccL`
+
+```
+# r --> 1 - 100
+int32 r
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/Arc
+**Type:** `dobot_msgs_v4/srv/Arc`
+
+```
+bool mode
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+float64 a2
+float64 b2
+float64 c2
+float64 d2
+float64 e2
+float64 f2
+
+string[] param_value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/BrakeControl
+**Type:** `dobot_msgs_v4/srv/BrakeControl`
+
+```
+int32 axis_id
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/CP
+**Type:** `dobot_msgs_v4/srv/CP`
+
+```
+# r --> 1 - 100
+int32 r
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/CalcTool
+**Type:** `dobot_msgs_v4/srv/CalcTool`
+
+```
+int32  index
+int32  matrix
+string offset
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/CalcUser
+**Type:** `dobot_msgs_v4/srv/CalcUser`
+
+```
+int32  index
+int32  matrix
+string offset
+---
+int32  res
+```
+
+## /dobot_bringup_ros2/srv/Circle
+**Type:** `dobot_msgs_v4/srv/Circle`
+
+```
+bool mode
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+float64 a2
+float64 b2
+float64 c2
+float64 d2
+float64 e2
+float64 f2
+int32 count
+string[] param_value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ClearError
+**Type:** `dobot_msgs_v4/srv/ClearError`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DI
+**Type:** `dobot_msgs_v4/srv/DI`
+
+```
+int32 index
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DIGroup
+**Type:** `dobot_msgs_v4/srv/DIGroup`
+
+```
+int32[] args
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DO
+**Type:** `dobot_msgs_v4/srv/DO`
+
+```
+int32 index
+int32 status
+int32 time
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DOInstant
+**Type:** `dobot_msgs_v4/srv/DOInstant`
+
+```
+int32 index
+int32 status
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DisableRobot
+**Type:** `dobot_msgs_v4/srv/DisableRobot`
+
+```
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DoGroup
+**Type:** `dobot_msgs_v4/srv/DOGroup`
+
+```
+int32[] args
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/DragSensivity
+**Type:** `dobot_msgs_v4/srv/DragSensivity`
+
+```
+int32 index
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/EmergencyStop
+**Type:** `dobot_msgs_v4/srv/EmergencyStop`
+
+```
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/EnableRobot
+**Type:** `dobot_msgs_v4/srv/EnableRobot`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/EnableSafeSkin
+**Type:** `dobot_msgs_v4/srv/EnableSafeSkin`
+
+```
+int32 status
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetAO
+**Type:** `dobot_msgs_v4/srv/GetAO`
+
+```
+int32 index
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetAngle
+**Type:** `dobot_msgs_v4/srv/GetAngle`
+
+```
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetCoils
+**Type:** `dobot_msgs_v4/srv/GetCoils`
+
+```
+int32 index
+int32 addr
+int32 count
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetCurrentCommandId
+**Type:** `dobot_msgs_v4/srv/GetCurrentCommandId`
+
+```
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetDO
+**Type:** `dobot_msgs_v4/srv/GetDO`
+
+```
+int32 index
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetDOGroup
+**Type:** `dobot_msgs_v4/srv/GetDOGroup`
+
+```
+int32[] index_group
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetErrorID
+**Type:** `dobot_msgs_v4/srv/GetErrorID`
+
+```
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetHoldRegs
+**Type:** `dobot_msgs_v4/srv/GetHoldRegs`
+
+```
+int32  index
+int32  addr
+int32  count
+string val_type
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetInBits
+**Type:** `dobot_msgs_v4/srv/GetInBits`
+
+```
+int32 index
+int32 addr
+int32 count
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetInRegs
+**Type:** `dobot_msgs_v4/srv/GetInRegs`
+
+```
+int32   index
+int32   addr
+int32   count
+string  val_type
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetInputBool
+**Type:** `dobot_msgs_v4/srv/GetInputBool`
+
+```
+int32 address
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetInputFloat
+**Type:** `dobot_msgs_v4/srv/GetInputFloat`
+
+```
+int32 address
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetInputInt
+**Type:** `dobot_msgs_v4/srv/GetInputInt`
+
+```
+int32 address
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetOutputBool
+**Type:** `dobot_msgs_v4/srv/GetOutputBool`
+
+```
+int32 address
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetOutputFloat
+**Type:** `dobot_msgs_v4/srv/GetOutputFloat`
+
+```
+int32 address
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetOutputInt
+**Type:** `dobot_msgs_v4/srv/GetOutputInt`
+
+```
+int32 address
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetPose
+**Type:** `dobot_msgs_v4/srv/GetPose`
+
+```
+int32 user
+int32 tool
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/GetStartPose
+**Type:** `dobot_msgs_v4/srv/GetStartPose`
+
+```
+string trace_name
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/InverseKin
+**Type:** `dobot_msgs_v4/srv/InverseKin`
+
+```
+float64 x
+float64 y
+float64 z
+float64 rx
+float64 ry
+float64 rz
+string  use_joint_near
+string  joint_near
+string  user
+string  tool
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ModbusClose
+**Type:** `dobot_msgs_v4/srv/ModbusClose`
+
+```
+int32 index
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ModbusCreate
+**Type:** `dobot_msgs_v4/srv/ModbusCreate`
+
+```
+string   ip
+int32    port
+int32    slave_id
+int32    is_rtu
+---
+string robot_return
+int32    res
+```
+
+## /dobot_bringup_ros2/srv/ModbusRTUCreate
+**Type:** `dobot_msgs_v4/srv/ModbusRTUCreate`
+
+```
+int32   slave_id
+int32   baud
+string  parity
+int32   data_bit
+int32   stop_bit
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/MovJ
+**Type:** `dobot_msgs_v4/srv/MovJ`
+
+```
+bool mode
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/MovJIO
+**Type:** `dobot_msgs_v4/srv/MovJIO`
+
+```
+bool mode
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] mdis
+string[] param_value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/MovL
+**Type:** `dobot_msgs_v4/srv/MovL`
+
+```
+bool mode
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/MovLIO
+**Type:** `dobot_msgs_v4/srv/MovLIO`
+
+```
+bool mode
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] mdis
+string[] param_value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/MoveJog
+**Type:** `dobot_msgs_v4/srv/MoveJog`
+
+```
+string axis_id
+string[] param_value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/Pause
+**Type:** `dobot_msgs_v4/srv/Pause`
+
+```
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/PositiveKin
+**Type:** `dobot_msgs_v4/srv/PositiveKin`
+
+```
+float64  j1
+float64  j2
+float64  j3
+float64  j4
+float64  j5
+float64  j6
+string   user
+string   tool
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/PowerOn
+**Type:** `dobot_msgs_v4/srv/PowerOn`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/RelJointMovJ
+**Type:** `dobot_msgs_v4/srv/RelJointMovJ`
+
+```
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/RelMovJUser
+**Type:** `dobot_msgs_v4/srv/RelMovJUser`
+
+```
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/RelMovLTool
+**Type:** `dobot_msgs_v4/srv/RelMovLTool`
+
+```
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/RelMovLUser
+**Type:** `dobot_msgs_v4/srv/RelMovLUser`
+
+```
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/RobotMode
+**Type:** `dobot_msgs_v4/srv/RobotMode`
+
+```
+---
+string robot_return
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/RunScript
+**Type:** `dobot_msgs_v4/srv/RunScript`
+
+```
+string project_name
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ServoJ
+**Type:** `dobot_msgs_v4/srv/ServoJ`
+
+```
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ServoP
+**Type:** `dobot_msgs_v4/srv/ServoP`
+
+```
+float64 a
+float64 b
+float64 c
+float64 d
+float64 e
+float64 f
+string[] param_value
+
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetBackDistance
+**Type:** `dobot_msgs_v4/srv/SetBackDistance`
+
+```
+float64 distance
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetCoils
+**Type:** `dobot_msgs_v4/srv/SetCoils`
+
+```
+int32    index
+int32    addr
+int32    count
+string   val_tab
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetCollisionLevel
+**Type:** `dobot_msgs_v4/srv/SetCollisionLevel`
+
+```
+int32 level
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetHoldRegs
+**Type:** `dobot_msgs_v4/srv/SetHoldRegs`
+
+```
+int32    index
+int32    addr
+int32    count
+string   val_tab
+string   val_type
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetOutputBool
+**Type:** `dobot_msgs_v4/srv/SetOutputBool`
+
+```
+int32 address
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetOutputFloat
+**Type:** `dobot_msgs_v4/srv/SetOutputFloat`
+
+```
+int32 address
+float64 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetOutputInt
+**Type:** `dobot_msgs_v4/srv/SetOutputInt`
+
+```
+int32 address
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetPayload
+**Type:** `dobot_msgs_v4/srv/SetPayload`
+
+```
+float64 load
+float64 x
+float64 y
+float64 z
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetPostCollisionMode
+**Type:** `dobot_msgs_v4/srv/SetPostCollisionMode`
+
+```
+int32 mode
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetSafeSkin
+**Type:** `dobot_msgs_v4/srv/SetSafeSkin`
+
+```
+int32 part
+int32 status
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetSafeWallEnable
+**Type:** `dobot_msgs_v4/srv/SetSafeWallEnable`
+
+```
+int32 index
+int32 value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetTool
+**Type:** `dobot_msgs_v4/srv/SetTool`
+
+```
+int32 index
+string value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetTool485
+**Type:** `dobot_msgs_v4/srv/SetTool485`
+
+```
+int32  baudrate
+string parity
+int32  stop
+int32  identify
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetToolMode
+**Type:** `dobot_msgs_v4/srv/SetToolMode`
+
+```
+int32 mode
+int32 type
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetToolPower
+**Type:** `dobot_msgs_v4/srv/SetToolPower`
+
+```
+int32 status
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SetUser
+**Type:** `dobot_msgs_v4/srv/SetUser`
+
+```
+int32 index
+string value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/SpeedFactor
+**Type:** `dobot_msgs_v4/srv/SpeedFactor`
+
+```
+int32 ratio
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/StartDrag
+**Type:** `dobot_msgs_v4/srv/StartDrag`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/StartPatht
+**Type:** `dobot_msgs_v4/srv/StartPath`
+
+```
+string trace_name
+string[] param_value
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/Stop
+**Type:** `dobot_msgs_v4/srv/Stop`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/StopDrag
+**Type:** `dobot_msgs_v4/srv/StopDrag`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/StopMoveJog
+**Type:** `dobot_msgs_v4/srv/StopMoveJog`
+
+```
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/Tool
+**Type:** `dobot_msgs_v4/srv/Tool`
+
+```
+int32 index
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ToolAI
+**Type:** `dobot_msgs_v4/srv/ToolAI`
+
+```
+int32 index
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ToolDI
+**Type:** `dobot_msgs_v4/srv/ToolDI`
+
+```
+int32 index
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ToolDO
+**Type:** `dobot_msgs_v4/srv/ToolDO`
+
+```
+int32 index
+int32 status
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/ToolDOInstant
+**Type:** `dobot_msgs_v4/srv/ToolDOInstant`
+
+```
+int32 index
+int32 status
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/User
+**Type:** `dobot_msgs_v4/srv/User`
+
+```
+int32 index
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/VelJ
+**Type:** `dobot_msgs_v4/srv/VelJ`
+
+```
+int32 r
+---
+int32 res
+```
+
+## /dobot_bringup_ros2/srv/VelL
+**Type:** `dobot_msgs_v4/srv/VelL`
+
+```
+int32 r
+---
+int32 res
+```
 
-### /dobot_bringup_ros2/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/get_parameters: rcl_interfaces/srv/GetParameters
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/list_parameters: rcl_interfaces/srv/ListParameters
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/set_parameters: rcl_interfaces/srv/SetParameters
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/AI: dobot_msgs_v4/srv/AI
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/AO: dobot_msgs_v4/srv/AO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/AOInstant: dobot_msgs_v4/srv/AOInstant
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/AccJ: dobot_msgs_v4/srv/AccJ
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/AccL: dobot_msgs_v4/srv/AccL
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/Arc: dobot_msgs_v4/srv/Arc
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/BrakeControl: dobot_msgs_v4/srv/BrakeControl
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/CP: dobot_msgs_v4/srv/CP
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/CalcTool: dobot_msgs_v4/srv/CalcTool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/CalcUser: dobot_msgs_v4/srv/CalcUser
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/Circle: dobot_msgs_v4/srv/Circle
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ClearError: dobot_msgs_v4/srv/ClearError
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DI: dobot_msgs_v4/srv/DI
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DIGroup: dobot_msgs_v4/srv/DIGroup
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DO: dobot_msgs_v4/srv/DO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DOInstant: dobot_msgs_v4/srv/DOInstant
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DisableRobot: dobot_msgs_v4/srv/DisableRobot
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DoGroup: dobot_msgs_v4/srv/DOGroup
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/DragSensivity: dobot_msgs_v4/srv/DragSensivity
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/EmergencyStop: dobot_msgs_v4/srv/EmergencyStop
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/EnableRobot: dobot_msgs_v4/srv/EnableRobot
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/EnableSafeSkin: dobot_msgs_v4/srv/EnableSafeSkin
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetAO: dobot_msgs_v4/srv/GetAO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetAngle: dobot_msgs_v4/srv/GetAngle
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetCoils: dobot_msgs_v4/srv/GetCoils
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetCurrentCommandId: dobot_msgs_v4/srv/GetCurrentCommandId
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetDO: dobot_msgs_v4/srv/GetDO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetDOGroup: dobot_msgs_v4/srv/GetDOGroup
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetErrorID: dobot_msgs_v4/srv/GetErrorID
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetHoldRegs: dobot_msgs_v4/srv/GetHoldRegs
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetInBits: dobot_msgs_v4/srv/GetInBits
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetInRegs: dobot_msgs_v4/srv/GetInRegs
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetInputBool: dobot_msgs_v4/srv/GetInputBool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetInputFloat: dobot_msgs_v4/srv/GetInputFloat
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetInputInt: dobot_msgs_v4/srv/GetInputInt
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetOutputBool: dobot_msgs_v4/srv/GetOutputBool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetOutputFloat: dobot_msgs_v4/srv/GetOutputFloat
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetOutputInt: dobot_msgs_v4/srv/GetOutputInt
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetPose: dobot_msgs_v4/srv/GetPose
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/GetStartPose: dobot_msgs_v4/srv/GetStartPose
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/InverseKin: dobot_msgs_v4/srv/InverseKin
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ModbusClose: dobot_msgs_v4/srv/ModbusClose
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ModbusCreate: dobot_msgs_v4/srv/ModbusCreate
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ModbusRTUCreate: dobot_msgs_v4/srv/ModbusRTUCreate
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/MovJ: dobot_msgs_v4/srv/MovJ
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/MovJIO: dobot_msgs_v4/srv/MovJIO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/MovL: dobot_msgs_v4/srv/MovL
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/MovLIO: dobot_msgs_v4/srv/MovLIO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/MoveJog: dobot_msgs_v4/srv/MoveJog
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/Pause: dobot_msgs_v4/srv/Pause
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/PositiveKin: dobot_msgs_v4/srv/PositiveKin
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/PowerOn: dobot_msgs_v4/srv/PowerOn
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/RelJointMovJ: dobot_msgs_v4/srv/RelJointMovJ
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/RelMovJUser: dobot_msgs_v4/srv/RelMovJUser
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/RelMovLTool: dobot_msgs_v4/srv/RelMovLTool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/RelMovLUser: dobot_msgs_v4/srv/RelMovLUser
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/RobotMode: dobot_msgs_v4/srv/RobotMode
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/RunScript: dobot_msgs_v4/srv/RunScript
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ServoJ: dobot_msgs_v4/srv/ServoJ
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ServoP: dobot_msgs_v4/srv/ServoP
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetBackDistance: dobot_msgs_v4/srv/SetBackDistance
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetCoils: dobot_msgs_v4/srv/SetCoils
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetCollisionLevel: dobot_msgs_v4/srv/SetCollisionLevel
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetHoldRegs: dobot_msgs_v4/srv/SetHoldRegs
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetOutputBool: dobot_msgs_v4/srv/SetOutputBool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetOutputFloat: dobot_msgs_v4/srv/SetOutputFloat
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetOutputInt: dobot_msgs_v4/srv/SetOutputInt
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetPayload: dobot_msgs_v4/srv/SetPayload
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetPostCollisionMode: dobot_msgs_v4/srv/SetPostCollisionMode
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetSafeSkin: dobot_msgs_v4/srv/SetSafeSkin
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetSafeWallEnable: dobot_msgs_v4/srv/SetSafeWallEnable
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetTool: dobot_msgs_v4/srv/SetTool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetTool485: dobot_msgs_v4/srv/SetTool485
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetToolMode: dobot_msgs_v4/srv/SetToolMode
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetToolPower: dobot_msgs_v4/srv/SetToolPower
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SetUser: dobot_msgs_v4/srv/SetUser
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/SpeedFactor: dobot_msgs_v4/srv/SpeedFactor
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/StartDrag: dobot_msgs_v4/srv/StartDrag
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/StartPatht: dobot_msgs_v4/srv/StartPath
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/Stop: dobot_msgs_v4/srv/Stop
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/StopDrag: dobot_msgs_v4/srv/StopDrag
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/StopMoveJog: dobot_msgs_v4/srv/StopMoveJog
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/Tool: dobot_msgs_v4/srv/Tool
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ToolAI: dobot_msgs_v4/srv/ToolAI
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ToolDI: dobot_msgs_v4/srv/ToolDI
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ToolDO: dobot_msgs_v4/srv/ToolDO
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/ToolDOInstant: dobot_msgs_v4/srv/ToolDOInstant
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/User: dobot_msgs_v4/srv/User
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/VelJ: dobot_msgs_v4/srv/VelJ
-**Type:** _(implicit / parameter service)_
-
-### /dobot_bringup_ros2/srv/VelL: dobot_msgs_v4/srv/VelL
-**Type:** _(implicit / parameter service)_
